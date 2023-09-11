@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup Page</title>
+
+    <style>
+        /* Add a class to style the buttons and links */
+        .button-container {
+            display: flex;
+            width: 500px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            margin-right: 10px;
+            background-color: red; /* Set the background color to red */
+            color: white; /* Set the text color to white */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .profile-photo {
+            width: 1000px;
+            border-radius: 50px; /* Create a circular shape */
+            overflow: hidden; /* Clip any content that goes beyond the circle */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+
+        /* Add a class for styling the profile photo image */
+        .profile-photo img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
+        }
+       
+    </style>
+  </head>
+  <body>
+    <h1>Login Page</h1>
+
+    <form>
+      <div class="profile-photo">
+        <!-- Add your profile photo as a background image -->
+        <img src="img.png" alt="Profile Photo">
+    </div>
+      <label for="username" style="font-weight: bold;margin-bottom: 5px;">Username</label><br></br>
+      <input type="text" placeholder="Enter Username" id="username"  style="width: 500px; height: 30px;"/><br></br>
+
+      <label for="password"  style="font-weight: bold;margin-bottom: 5px;" >Password</label><br></br>
+      <input type="password"  placeholder="Enter Password " id="password" style="width: 500px;height: 30px;"/><br></br>
+    
+      <input type="submit" value="Login" style="background-color: green; color: white; width: 500px; padding: 10px 20px; cursor: pointer;"/><br></br>
+      <input type="checkbox" id="declare"/>
+       <label for="declare">Remember me</label><br></br>
+
+       <div class="button-container">
+       <button type="button" >Cancel</button>
+    
+    <p><a href="forgot_password.php">Forgot Password?</a></p>
+    </form>
+  </div>
+  </body>
+</html>

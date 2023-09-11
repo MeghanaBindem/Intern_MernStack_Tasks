@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 12px;
+        width: 300px;
+        border: 1px solid black;
+        border-style: solid;
+      }
+      li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        color: blue; /* Set the initial text color */
+      }
+
+      li a:hover {
+        background-color: orange;
+        color: white; /* Text color becomes white on hover */
+      }
+
+      .box {
+        background-color: lightblue;
+        width: 295px;
+        font-size: 20px;
+      }
+
+      li a1:hover {
+        background-color: gray;
+        color: white;
+      }
+
+      .box2 {
+        background-color: lightgray;
+        display: flex;
+        width: 280px;
+        height: 20px;
+        border: 1px solid black;
+        font-size: 20px;
+        color: blue;
+      }
+      .box2 li:not(:first-child) a1 {
+        border-left: 1px solid blue; /* Add vertical border between items */
+        padding-left: 15px; /* Add some spacing */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vertical Navigation Bar</h1>
+    <ul>
+      <div class="box">
+        <br />
+        <li>
+          <a href="#" style="background-color: orange; color: white">Home</a>
+        </li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+      </div>
+    </ul>
+    <h2>Horizontal Navigation bar</h2>
+    <ul>
+      <div class="box2">
+        <br />
+        <li>
+          <a1 href="#" style="background-color: lightgray; color: gray"
+            >Home</a1
+          >
+        </li>
+        <li><a1 href="#">Java</a1></li>
+        <li><a1 href="#">HTML</a1></li>
+        <li><a1 href="#">CSS</a1></li>
+      </div>
+    </ul>
+  </body>
+</html>

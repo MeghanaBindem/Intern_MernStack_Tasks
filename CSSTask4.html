@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documen</title>
+    <style>
+      #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+      }
+
+      #mySidenav a:hover {
+        left: 0;
+      }
+      .nav {
+        border: 1px solid black;
+        width: 500px;
+        height: 350px;
+        position: fixed;
+      }
+
+      #about {
+        top: 20px;
+        background-color: green;
+      }
+
+      #hover {
+        top: 80px;
+        background-color: #2196f3;
+      }
+
+      #sidenav {
+        top: 140px;
+        background-color: #f44336;
+      }
+
+      #buttons {
+        top: 200px;
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="nav">
+      <a href="#" id="about">About</a>
+      <a href="#" id="hover">Hover</a>
+      <a href="#" id="sidenav">Sidenav</a>
+      <a href="#" id="buttons">Buttons</a>
+    </div>
+    <div style="margin-left: 80px">
+      <h2>Hoverable Sidenav Buttons</h2>
+      <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+  </body>
+</html>
